@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple demo e-commerce store built with HTML, CSS, JavaScript, Express, and SQLite.">
+  <title>ShopEase | Simple E-commerce Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" id="homeLink"><span class="brand-mark">S</span> ShopEase</a>
+    <nav class="nav-actions" aria-label="Main navigation">
+      <button class="nav-link" id="ordersBtn" hidden>My Orders</button>
+      <button class="nav-link" id="authBtn">Login / Register</button>
+      <button class="cart-button" id="cartBtn">Cart <span id="cartCount">0</span></button>
+      <button class="nav-link" id="logoutBtn" hidden>Logout</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">YOUR EVERYDAY FINDS</p>
+        <h1>Good products.<br><span>Better everyday.</span></h1>
+        <p class="hero-copy">Discover useful essentials at simple, friendly prices.</p>
+        <a class="primary-button hero-button" href="#products">Explore products</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-circle"></div><div class="art-card">✦<br><small>YOUR NEXT<br>FAVOURITE</small></div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-heading">
+        <div><p class="eyebrow">CURATED FOR YOU</p><h2>Featured products</h2></div>
+        <input id="searchInput" class="search-input" type="search" placeholder="Search products..." aria-label="Search products">
+      </div>
+      <div id="productGrid" class="product-grid"><p class="muted">Loading products...</p></div>
+    </section>
+
+    <section class="section panel" id="contentPanel" hidden></section>
+  </main>
+
+  <footer><p>© <span id="year"></span> ShopEase · Student project demo</p><p>Built with HTML, CSS, JavaScript, Express.js & SQLite.</p></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
