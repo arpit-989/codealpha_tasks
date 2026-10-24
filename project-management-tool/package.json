@@ -1,0 +1,14 @@
+{
+  "name": "project-management-tool",
+  "version": "1.0.0",
+  "description": "Collaborative project management tool",
+  "main": "server.js",
+  "scripts": {"start": "node server.js"},
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.8.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
